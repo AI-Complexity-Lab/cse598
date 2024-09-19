@@ -12,7 +12,7 @@ This homework will give you some hands-on practice with these relatively new, st
 `source myenv/bin/activate`
 
 ### Step 2: Clone this repository
-`git clone [https://github.com/AI-Complexity-Lab/cse598-hw.git](https://github.com/AI-Complexity-Lab/cse598.git)`
+`git clone https://github.com/AI-Complexity-Lab/cse598.git`
 
 ### Step 3: Go to the HW assignment folder
 `cd hw1`
