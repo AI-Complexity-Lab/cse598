@@ -6,7 +6,7 @@ This Homework Assignment has 2 main parts to it:
 
 This homework will give you some hands-on practice with these relatively new, state-of-the-art methods. You will not only implement some of them, but you will use them in action in an experimental setup quite common in today's new research (solving relevant differential equations) in science. 
 
-##Setup
+## Setup
 ### Step 1: Create and enter a virtual environment with python3.9:
 `python3.9 -m venv myenv`\
 `source myenv/bin/activate`
