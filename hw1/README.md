@@ -15,7 +15,7 @@ This homework will give you some hands-on practice with these relatively new, st
 `git clone https://github.com/AI-Complexity-Lab/cse598.git`
 
 ### Step 3: Go to the HW assignment folder
-`cd hw1`
+`cd cse598/hw1`
 
 ### Step 4: Install requirements with pip
 *Make sure pip is installed in your virtual environment.*\
