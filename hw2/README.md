@@ -10,7 +10,7 @@ Follow the instructions below to set up your virtual environment.
 `source myenv/bin/activate`
 
 ### Step 2: Clone this repository
-`git clone https://github.com/AI-Complexity-Lab/cse598-hw.git`
+`git clone https://github.com/AI-Complexity-Lab/cse598.git`
 
 ### Step 3: Go to the Neural Operator HW Assignment Folder
 `cd cse598-hw/homework\ 2`
