@@ -3,9 +3,9 @@ This homework assignment will get you familiar with two important concepts:
 - Discrepancy Modeling for Epidemiology
 - Symbolic Regression
 
-Follow the instructions below to set up your virtual environment.\
+Follow the instructions below to set up your virtual environment.
 
-**Note, please use conda instead of a python venv. Instructions below:**\
+**Note, please use conda instead of a python venv. Instructions below:**
 
 ### Step 1: Create a virtual environment with conda with the correct dependencies:
 `conda env create -f environment.yml`\
