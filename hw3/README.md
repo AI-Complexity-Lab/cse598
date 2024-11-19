@@ -21,6 +21,8 @@ Follow the instructions below to set up your virtual environment.
 
 ### Step 5: Complete both assignments
 Head to the 2 jupyter notebooks either through the jupyter interface by entering this command:\
-`jupyter notebook`\
-Or by using vscode.\
+`jupyter notebook`
+
+Or by using vscode.
+
 Then, complete both assignments. Happy coding!
