@@ -7,17 +7,26 @@ Follow the instructions below to set up your virtual environment.
 
 **Note, please use conda instead of a python venv. Instructions below:**
 
-### Step 1: Create a virtual environment with conda with the correct dependencies:
-`conda env create -f environment.yml`
-
-### Step 2: Clone this repository
-`conda activate cse598`
-
-### Step 3: Clone this repository
+### Step 1: Clone this repository
 `git clone https://github.com/AI-Complexity-Lab/cse598.git`
 
-### Step 3: Head to homework 3
+### Step 2: Head to homework 3
 `cd cse598/hw3`
+
+### Step 3a: Create a virtual environment with conda with the correct dependencies:
+`conda env create -f environment.yml`
+
+### Step 3b: Activate the environment
+`conda activate cse598`
+
+### Step 4a: Alternatively, create a virtual environment with pip using python3.12:
+`python3.12 -m venv myenv`
+
+### Step 4b: Activate this environment
+`source myenv/bin/activate`
+
+### Step 4c: Install the dependencies
+`pip install -r requirements.txt`
 
 ### Step 5: Complete both assignments
 Head to the 2 jupyter notebooks either through the jupyter interface by entering this command:\
