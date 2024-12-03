@@ -35,3 +35,7 @@ Head to the 2 jupyter notebooks either through the jupyter interface by entering
 Or by using vscode.
 
 Then, complete both assignments. Happy coding!
+
+### Step 6: Additional setup for Symbolic Regression Assignment
+Please create a directory **inside the hw3 directory** called `weights`.
+Next, please download both the 10M and 100M datasets (as specified using the links in the notebook) and place them in the `weights` folder - they were not provided in this repo because the datasets are quite large (300MB each).
