@@ -7,7 +7,6 @@ import warnings
 import torch
 from torch.utils import data
 import math
-from nesymres.utils import load_metadata_hdf5, load_eq
 from sympy.core.rules import Transform
 from sympy import sympify, Float, Symbol
 from multiprocessing import Manager
@@ -37,11 +36,13 @@ from generator import Generator
 import torch.nn as nn
 import torch.nn.functional as F
 import pytorch_lightning as pl
-# from nesymres.dclasses import DatasetDetails, Equation
 from functools import partial
 from ordered_set import OrderedSet
 from pathlib import Path
 import hydra
+import h5py
+import pickle
+import os
 
 @dataclass
 class Equation:
@@ -121,6 +122,22 @@ class FitParams:
     bfgs: BFGSParams = field(default_factory=BFGSParams)
     beam_size: int = 2
 
+
+def load_metadata_hdf5(path_folder: Path) -> DatasetDetails:
+    f = h5py.File(os.path.join(path_folder,"metadata.h5"), 'r')
+    dataset_metadata = f["other"]
+    raw_metadata = np.array(dataset_metadata)
+    metadata = pickle.loads(raw_metadata.tobytes())
+    return metadata
+
+def load_eq(path_folder, idx, num_eqs_per_set) -> Equation:
+    index_file = str(int(idx/num_eqs_per_set))
+    f = h5py.File(os.path.join(path_folder,f"{index_file}.h5"), 'r')
+    dataset_metadata = f[str(idx - int(index_file)*int(num_eqs_per_set))]
+    raw_metadata = np.array(dataset_metadata)
+    metadata = pickle.loads(raw_metadata.tobytes())
+    f.close()
+    return metadata
 
 def sample_symbolic_constants(eq: Equation, cfg=None) -> Tuple:
     """Given an equation, returns randomly sampled constants and dummy contants
